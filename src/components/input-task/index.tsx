@@ -4,6 +4,7 @@ import styles from "./styles.module.scss"
 import { useDispatch } from "react-redux"
 import { useState } from "react"
 import { addTodo } from "../list/slice"
+import { CONTENT } from "./constants"
 
 export const InputTask = () => {
   const dispatch = useDispatch()
@@ -22,7 +23,11 @@ export const InputTask = () => {
 
   return (
     <div className={styles["input-task-wrapper"]}>
-      <Input value={newTodo} onChange={handleInputChange} />
+      <Input
+        value={newTodo}
+        onChange={handleInputChange}
+        placeholder={CONTENT.INPUT_PLACEHOLDER}
+      />
       <Button
         className={styles["button-style"]}
         icon={<PlusCircleOutlined />}
