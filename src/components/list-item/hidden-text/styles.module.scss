@@ -1,0 +1,23 @@
+.hidden-wrapper {
+  display: flex;
+  width: 300px;
+}
+
+.hidden-inner {
+  align-self: center;
+  display: flex;
+}
+
+.hidden-top {
+  margin-top: 5px;
+}
+.text-style {
+  display: flex;
+  align-self: center;
+}
+
+.button-style {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
