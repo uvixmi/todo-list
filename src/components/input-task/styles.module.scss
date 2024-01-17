@@ -1,6 +1,8 @@
+@import "../variables.scss";
+
 .input-task-wrapper {
   display: flex;
-  column-gap: 8px;
+  column-gap: $units-m;
   width: 100%;
 }
 

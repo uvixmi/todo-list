@@ -1,16 +1,18 @@
+@import "../variables.scss";
+
 .list-item-wrapper {
   display: flex;
-  column-gap: 8px;
+  column-gap: $units-m;
   justify-content: space-between;
   width: 100%;
   max-width: 780px;
 }
 
 .checkbox-style {
-  height: 32px;
+  height: $height-default;
 }
 
 .button-style {
-  color: #000000;
+  color: $color-black;
   border: none;
 }

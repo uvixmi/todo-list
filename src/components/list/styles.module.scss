@@ -1,8 +1,10 @@
+@import "../variables.scss";
+
 .list-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
-  margin: 20px;
+  row-gap: $units-m;
+  margin: $units-l;
   min-width: 364px;
   align-items: center;
 }

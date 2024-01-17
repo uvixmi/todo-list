@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .hidden-wrapper {
   display: flex;
   width: 300px;
@@ -9,7 +11,7 @@
 }
 
 .hidden-top {
-  margin-top: 5px;
+  margin-top: $units-s;
 }
 .text-style {
   display: flex;

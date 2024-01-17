@@ -3,8 +3,12 @@ import { Button, Typography } from "antd"
 import { HiddenTextProps } from "./types"
 import styles from "./styles.module.scss"
 import cn from "classnames"
+import { ELLIPSIS_SYMBOL, MAX_LENGTH } from "./constants"
 
-export const HiddenText = ({ title, maxLength = 30 }: HiddenTextProps) => {
+export const HiddenText = ({
+  title,
+  maxLength = MAX_LENGTH,
+}: HiddenTextProps) => {
   const { Text } = Typography
   const [isFullText, setIsFullText] = useState(false)
 
@@ -26,7 +30,7 @@ export const HiddenText = ({ title, maxLength = 30 }: HiddenTextProps) => {
         </Text>
         {title.length > maxLength && (
           <Button className={styles["button-style"]} onClick={toggleText}>
-            {isFullText ? "" : "..."}
+            {!isFullText && ELLIPSIS_SYMBOL}
           </Button>
         )}
       </div>
