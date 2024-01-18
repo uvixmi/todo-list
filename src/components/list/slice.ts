@@ -1,4 +1,3 @@
-// todoSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { ListItem, TodoState } from "./types"
 import { LOCAL_STORAGE_KEY } from "./constants"
