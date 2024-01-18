@@ -1,4 +1,3 @@
-// rootReducer.js
 import todoReducer from "./components/list/slice"
 import { configureStore } from "@reduxjs/toolkit"
 
